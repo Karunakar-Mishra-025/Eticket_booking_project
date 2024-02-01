@@ -1,0 +1,579 @@
+#slider {
+    overflow: hidden;
+}
+
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+#date{
+    padding:18px 15px 10px 15px;
+}
+.buttons{
+    display:flex;
+    margin-top: 20px;
+}
+.buttons>form{
+    
+    margin-right:20px;
+}
+.error-container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#a1d5f1;
+    margin:0px;
+}
+.about-container{
+    min-height:100vh;
+    justify-content:center;
+    align-items:center;
+    background:#a1d5f1;
+    padding:20px;
+    margin:0px;
+}
+.edit-container{
+    min-height:100vh;
+    background: #a1d5f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.edit-container form{
+    background: #003049;
+    padding:30px;
+    width:500px;
+    text-align: center;
+    color: white;
+}
+.edit-container input[type="submit"]{
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.edit-container input[type="submit"]:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color:white;
+    background: #09a9ff;
+    text-transform: uppercase;
+}
+.edit-container h2,.container h2,.contact-container form h2{
+    padding-bottom:20px;
+    border-bottom: 2px solid #9e4e4e;
+    margin:0px 0px 20px 0px;
+}
+.about-container .main{
+    display:inline-block;
+    min-height:90vh;
+    min-width:100%;
+    margin-bottom:10px;
+    border:solid 1px black;
+    border-radius:20px;
+    padding:20px;
+}
+.about-container .main h1{
+    font-family:arial;
+    font-size:20px;
+    padding:20px;
+    width:fit-content;
+    border-bottom:solid 2px #9e4e4e;
+}
+.profile_dropdown{
+    position:absolute;
+    margin-top:38px;
+    /* top:38px; */
+    z-index:1;
+    display:none;
+}
+
+.profile_dropdown a,button{
+    text-align: center;
+    display:block;
+    width:180px;
+}
+.profile_dropdown.active{
+    display:block;
+}
+.buttons-next-prev{
+    display:flex;
+    margin:20px;
+}
+.buttons-next-prev .book{
+    margin:0;
+}
+.buttons-next-prev .book.next{
+    float:
+    right;
+    position:absolute;
+    right:20px;
+    height:min-content;
+}
+.about-container .main .card{
+    float:right;
+    font-family:arial;
+    text-align:center;
+    background:#fff;
+    padding:30px;
+    margin  :15px;
+    margin-top:0;
+    width: fit-content;
+    height: fit-content;
+}
+.about-container .main  p{
+    word-spacing:4px;
+    font-size: 20px;
+    margin:10px;
+}
+.about-container .main .card img{
+    border-radius:50%;
+    height:200px;
+    width:200px;
+}
+.about-container ul{
+    margin-top:15px;
+}
+.about-container ul li{
+    margin-left: 20px;
+    margin-bottom:15px;
+    font-size:18px;
+}
+@media (max-width:900px) {
+    
+.about-container .main .card{
+    float:left;
+    margin-left:0;
+    height:290px;
+}
+    
+.about-container .main .card img{
+    border-radius:50%;
+    height:150px;
+    width:150px;
+}
+}
+.back{
+    position:absolute;
+    top:140px;
+    right:20px;
+    padding:9px 20px;
+    text-decoration: none;
+    background:#000000;
+    color: white;
+    transition: background 0.5s,color 0.5s,border 0.5s;
+    text-decoration: bold;
+    margin: 5px;
+    border:solid 1px white;
+}
+.back:hover{
+    cursor: pointer;
+    background: #fff;
+    border-color:black;
+    color:#000;
+}
+.buttons>form>.book{
+    margin-top: 0px;
+}
+#slider figure img {
+    width: 20%;
+    float: left;
+}
+* {
+    box-sizing: border-box;
+}
+.buttons input
+{
+    width: 200px;
+ margin-top: 15px;
+ margin-right: 15px;
+ background : #fff ;
+ border : solid 1px black ;
+ outline : none ;
+ padding : 10px 10px ;
+ border-radius: 0;
+}
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+
+    20% {
+        left: 0;
+    }
+
+    25% {
+        left: -100%;
+    }
+
+    45% {
+        left: -100%;
+    }
+
+    50% {
+        left: -200%;
+    }
+
+    70% {
+        left: -200%;
+    }
+
+    75% {
+        left: -300%;
+    }
+
+    95% {
+        left: -300%;
+    }
+
+    100% {
+        left: -400%;
+    }
+}
+
+.container>form {
+    position: absolute;
+    top: 70%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    background: #003049;
+    display: block;
+    width: 400px;
+    height: auto;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 10px;
+}
+.bookingform input[type="submit"]{
+    display:flex;
+    padding:10px;
+    width:min-content;
+}
+input,.container button,.container-form button {
+    background: #fff;
+    border-radius: 5px;
+    color: black;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    font-size: 15px;
+    font-family: arial;
+}
+
+.container button,.container-form form input[type="submit"] {    
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: arial;
+    transition: background 0.3s, color 0.3s;
+}
+
+.container button:hover,.container-form form input[type="submit"]:hover {
+    background: #006297;
+    color: white;
+    cursor: pointer;
+}
+.bookingform{
+    display:block;
+    background: #003049;
+    margin:20px;
+    padding:20px 30px;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.items-center {
+    align-items: center;
+}
+.flex {
+    display: flex;
+}
+.bookingform>button{
+    background:#006297;
+    width:150px;
+    transition:letter-spacing 0.50s;
+}
+.bookingform>button:hover{
+    background:#09a9ff;
+    letter-spacing:3px;
+    width:150px;
+}
+
+.right{
+    display:flex;
+    position:absolute;
+    right:0;
+}
+nav ul {
+    display: flex;
+    background: #003049;
+}
+
+nav ul li {
+    display: flex;
+    list-style: none;
+    margin: 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #003049;
+    transition: background 0.3s, color 0.3s;
+}
+
+nav ul li a:hover {
+    background: #006297;
+    cursor: pointer;
+}
+.container-form {
+    width: 100%;
+    min-height: 100vh;
+    background: #fff;
+    display:flex;
+    align-items:center;
+    padding:20px;
+    justify-content:center;
+}
+
+
+.container-form>form {
+    margin-top:40px;
+    margin-bottom:40px;
+    text-transform: uppercase;
+    background: #003049;
+    display: block;
+    width: 500px;
+    height: auto;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 7px 8px 20px 0px grey;
+    text-align: center;
+}
+.container-form form>h2{
+    color:white;
+    margin:5px;
+    font-size: 15px;
+}
+
+.container-form-header{
+    border-bottom:solid 2px #c06666;
+}
+.container-form textarea{
+    font-size: 15px;
+    font-family: arial;
+    width:100%;
+    padding:20px;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+@media (max-width:900px) {
+    .container>form {
+        position: absolute;
+        top: 70%;
+        left:50%;
+        text-transform: uppercase;
+        background: #003049;
+        display: block;
+        width: 400px;
+        height: auto;
+        padding: 30px 30px;
+        text-align: center;
+        border-radius: 10px;
+    }
+    
+}
+.card{
+    background:#cece;
+    padding:20px;
+    margin:20px;
+}
+.card>span{
+    margin:5px;
+    margin-left:0;
+    padding:10px;
+    border:solid 1px #c06666;
+}
+.card>form>.book{
+    margin-top:40px;
+}
+form>header{
+    color:white;
+    margin-bottom:20px;
+}
+.container-form-header>h2,.container-form-header>p{
+    margin:15px;
+}
+.error{
+    color:red;
+    font-size: 16px;
+    margin-bottom:15px;
+}
+.flash-message{
+    position: fixed;
+    left: 50px;
+    padding:40px 10px;
+    background-color: skyblue;
+    color:#fff;
+}
+
+button{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #003049;
+    border: #003049;
+    transition: background 0.3s, color 0.3s;
+    height:100%;
+}
+button:hover{
+    background: #006297;
+    cursor: pointer;
+}
+::-webkit-scrollbar{
+    width:5px;
+}
+::-webkit-scrollbar-track{
+    background:#c9c9c9;
+}
+::-webkit-scrollbar-thumb{
+    background:#8d8989;
+    border-radius:0px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background:#4d4d4d;
+}
+.traincard>span{
+    margin-right:30px;
+}
+.cancel{
+    /*     margin-top: 15px; */
+    margin-left:15px;
+    padding:10px 20px;
+    background: #bb0202;
+    color:white;
+}
+.cancel:hover{
+    background:#ff0000;
+    cursor: pointer;
+}
+
+.contact-container{
+    min-height:100vh;
+    background: #a1d5f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-container-main{
+    min-height:100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:#09a;
+}
+.contact-container form{
+    color:white;
+    background: #003049;
+    padding: 40px;
+    width: 530px;
+    text-align: center;
+    box-shadow: 4px 4px 20px 5px #006499;
+    border-radius: 10px;
+}
+.contact-container-main h2{
+    font-size:1.7rem;
+    margin:30px;
+    font-family:Calibri Light;
+    text-align:center;
+}
+.contact-container input[type="submit"]{
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+.contact-container input[type="submit"]:hover{
+    cursor: pointer;
+    font-size: 20px;
+    color:white;
+    background: #09a9ff;
+    text-transform: uppercase;
+}
+.contact-container textarea{
+    padding:20px;
+    width:100%;
+    margin-bottom:10px;
+    border-radius:10px;
+}
+
+
+
+.page_links{
+    padding:20px;
+    margin:0px;
+}
+.page_links a,.page_links span{
+    padding:10px 20px;
+    color:black;
+    border:solid 1px #bbb;
+    background:#ccc;
+    text-decoration: none;
+}
+.page_links span{
+    color:#949494;
+}
+
+
+
+
+/* responsive navbar css */
+
+.nav .nav-icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .nav li:not(:first-child),.nav .left {display: none;}
+    .nav li.nav-icon {
+      position: absolute;
+      right: 0;
+      display: flex;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .nav.responsive {
+        position: relative; display:block;
+    }
+  
+    .nav.responsive .nav-icon {
+        margin:0;
+      position: absolute;
+      right: 0;
+      top:0;
+        width:min-content;
+    }
+    .nav.responsive li,.nav .left {
+      float: none;
+      display: flex;
+      text-align: left;
+    }
+      
+      .nav.responsive li:first-child a{
+          background:#ccc;
+      }.nav.responsive li:first-child a:hover{
+          background:#bbb;
+      }
+      .nav.responsive .left{
+          position:static;
+      }
+      .nav.responsive li>a{
+          width:100%;
+      }
+  }
+  

@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0px;
+    font-family: arial;
+    box-sizing: border-box;
+}
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    min-height: 10vh;
+    display: flex;
+}
+
+.header>h1 {
+    color: rgb(184, 184, 184);
+}
+
+.footer {
+    background: #006297;
+    color: #ffffff;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    font-family: arial;
+    position: fixed;
+    bottom: 0%;
+    width: 100%;
+}
+
+.book {
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+    background: #003049;
+    margin-top: 15px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.book:hover {
+    background: #006297;
+    cursor: pointer;
+}
+
+.traincard>span {
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.form {
+    text-transform: uppercase;
+    margin: 20px;
+    background: #003049;
+    display: flex;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+  @media screen and (max-width: 900px) {
+    .form{
+        display:block;
+    }
+  }
+form>header>h2 {
+    margin-top: 0px;
+    margin-bottom: 0;
+}
+
+.modify>input,.modify>button {
+    background: #fff;
+    border-radius: 5px;
+    color: black;
+    width: auto;
+    border: 0;
+    padding: 10px;
+    height: min-content;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: arial;
+    margin-left: 20px;
+}
+
+.modify>button{
+    text-transform: uppercase;
+    font-size: 15px;
+    font-family: arial;
+    transition: background 0.3s, color 0.3s, letter-spacing 1s;
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.modify>button:hover {
+    background: #006297;
+    letter-spacing: 2px;
+    color: white;
+    cursor: pointer;
+}
+
+
+.traincard>h2 {
+    text-transform: capitalize;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    margin-top: -20px;
+    margin-left: -20px;
+    margin-right: -20px;
+    background: #ccc;
+}
+
+.traincard {
+    border: solid 1px black;
+    margin: 20px;
+    padding: 20px;
+    height: auto;
+}
+
+.footer {
+    position: relative;
+}
